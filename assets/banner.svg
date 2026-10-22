@@ -1,0 +1,132 @@
+<svg width="100%" height="220" viewBox="0 0 1200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1e38" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F7DF1E" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#4ADE80" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7DF1E" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.05" />
+    </linearGradient>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="jsGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F7DF1E" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#F7DF1E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FB923C" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FB923C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .bg { fill: url(#bgGrad); }
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      font-size: 46px;
+      fill: url(#textGrad);
+      letter-spacing: -1px;
+    }
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      fill: #94A3B8;
+      letter-spacing: 0.5px;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #E2E8F0;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.15); }
+    }
+    @keyframes orbit1 {
+      0% { transform: translate(0px, 0px); }
+      50% { transform: translate(25px, -15px); }
+      100% { transform: translate(0px, 0px); }
+    }
+    @keyframes orbit2 {
+      0% { transform: translate(0px, 0px); }
+      50% { transform: translate(-20px, 18px); }
+      100% { transform: translate(0px, 0px); }
+    }
+    @keyframes stream {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .anim-pulse1 { animation: pulse 6s ease-in-out infinite; transform-origin: 150px 110px; }
+    .anim-pulse2 { animation: pulse 8s ease-in-out infinite; transform-origin: 1050px 80px; }
+    .anim-float1 { animation: orbit1 9s ease-in-out infinite; }
+    .anim-float2 { animation: orbit2 11s ease-in-out infinite; }
+    .streaming-line {
+      stroke-dasharray: 12, 12;
+      animation: stream 15s linear infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="220" rx="16" class="bg" />
+
+  <!-- Dynamic Ambient Glowing Orbs in Background -->
+  <circle cx="150" cy="110" r="140" fill="url(#jsGlow)" class="anim-pulse1" />
+  <circle cx="1050" cy="80" r="150" fill="url(#nodeGlow)" class="anim-pulse2" />
+  <circle cx="920" cy="160" r="110" fill="url(#bunGlow)" class="anim-pulse1" />
+
+  <!-- Animated Ambient Data Lines (Layered behind text) -->
+  <path d="M 50 180 Q 300 40 600 120 T 1150 70" fill="none" stroke="#38BDF8" stroke-width="2" opacity="0.25" class="streaming-line" />
+  <path d="M 50 80 Q 400 200 800 110 T 1150 170" fill="none" stroke="#F7DF1E" stroke-width="2" opacity="0.2" class="streaming-line" style="animation-direction: reverse;" />
+
+  <!-- Floating Dynamic Tech Micro-Badges in Background -->
+  <g class="anim-float1" opacity="0.75">
+    <rect x="80" y="35" width="88" height="28" rx="14" fill="#1E293B" stroke="#F7DF1E" stroke-width="1.2" />
+    <circle cx="95" cy="49" r="5" fill="#F7DF1E" />
+    <text x="108" y="54" class="badge-text">Node.js</text>
+  </g>
+  <g class="anim-float2" opacity="0.75">
+    <rect x="1020" y="35" width="75" height="28" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2" />
+    <circle cx="1035" cy="49" r="5" fill="#38BDF8" />
+    <text x="1047" y="54" class="badge-text">Deno</text>
+  </g>
+  <g class="anim-float1" opacity="0.75">
+    <rect x="990" y="150" width="70" height="28" rx="14" fill="#1E293B" stroke="#FB923C" stroke-width="1.2" />
+    <circle cx="1005" cy="164" r="5" fill="#FB923C" />
+    <text x="1017" y="169" class="badge-text">Bun</text>
+  </g>
+  <g class="anim-float2" opacity="0.75">
+    <rect x="110" y="155" width="85" height="28" rx="14" fill="#1E293B" stroke="#A855F7" stroke-width="1.2" />
+    <circle cx="125" cy="169" r="5" fill="#A855F7" />
+    <text x="137" y="174" class="badge-text">V8 &amp; WASM</text>
+  </g>
+
+  <!-- Foreground Title and Subtitle (Crisp and Unobstructed) -->
+  <g id="foreground-content">
+    <text x="600" y="98" text-anchor="middle" class="title">⚡ Awesome JavaScript Runtimes</text>
+    <text x="600" y="140" text-anchor="middle" class="subtitle">Curated Landscape of Server-Side Engines, Serverless Compute &amp; Edge Platforms</text>
+
+    <!-- Foreground Category Pills -->
+    <g transform="translate(365, 168)">
+      <rect x="0" y="0" width="130" height="24" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <text x="65" y="16" text-anchor="middle" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">🚀 Server Runtimes</text>
+
+      <rect x="142" y="0" width="145" height="24" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <text x="214" y="16" text-anchor="middle" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">🌐 Edge &amp; Cloud SaaS</text>
+
+      <rect x="299" y="0" width="170" height="24" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <text x="384" y="16" text-anchor="middle" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">⚡ Embedded &amp; Low Latency</text>
+    </g>
+  </g>
+</svg>
