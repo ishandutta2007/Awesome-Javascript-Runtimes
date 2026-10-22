@@ -60,7 +60,7 @@ The table below lists top managed serverless, edge, and containerized platforms 
 
 ## 🛠️ Open-Source JavaScript Runtimes
 
-The top open-source JavaScript runtimes and execution engines for servers, microservices, edge sandboxing, WebAssembly, and IoT. Sorted by **GitHub Stars_Counts** in descending order.
+The top open-source JavaScript runtimes and execution engines for servers, microservices, edge sandboxing, WebAssembly, and IoT. Sorted by **GitHub_Stars_Counts** in descending order.
 
 | Project & Repository | GitHub_Stars | Core Engine / Architecture | Primary Strengths & Deployment Scenarios |
 | :--- | :--- | :--- | :--- |
