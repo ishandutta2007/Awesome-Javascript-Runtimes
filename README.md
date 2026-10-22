@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Javascript-Runtimes/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Javascript-Runtimes?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Javascript-Runtimes/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Javascript-Runtimes?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Javascript-Runtimes/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Javascript-Runtimes?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Javascript-Runtimes/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Javascript-Runtimes?style=flat-square&color=orange" alt="Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Javascript-Runtimes/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Javascript-Runtimes?style=flat-square&color=green" alt="License" /></a>
@@ -60,9 +60,9 @@ The table below lists top managed serverless, edge, and containerized platforms 
 
 ## 🛠️ Open-Source JavaScript Runtimes
 
-The top open-source JavaScript runtimes and execution engines for servers, microservices, edge sandboxing, WebAssembly, and IoT. Sorted by **GitHub Star Counts** in descending order.
+The top open-source JavaScript runtimes and execution engines for servers, microservices, edge sandboxing, WebAssembly, and IoT. Sorted by **GitHub Stars_Counts** in descending order.
 
-| Project & Repository | GitHub Stars | Core Engine / Architecture | Primary Strengths & Deployment Scenarios |
+| Project & Repository | GitHub_Stars | Core Engine / Architecture | Primary Strengths & Deployment Scenarios |
 | :--- | :--- | :--- | :--- |
 | **[Node.js](https://github.com/nodejs/node)** 🟢 | [![Stars](https://img.shields.io/github/stars/nodejs/node?style=social&color=white)](https://github.com/nodejs/node/stargazers) | Google V8 / libuv (C++) | **The enterprise standard.** Massive npm registry, stable LTS cycles, native TypeScript type stripping (v22+), and unbeatable ecosystem compatibility for mission-critical production servers. |
 | **[Deno](https://github.com/denoland/deno)** 🦕 | [![Stars](https://img.shields.io/github/stars/denoland/deno?style=social&color=white)](https://github.com/denoland/deno/stargazers) | Google V8 / Tokio (Rust) | **Security-first runtime.** Explicit flag-based permission model (filesystem/network sandbox), native TypeScript and JSX execution, built-in standard library, and transparent `npm:` package compatibility. |
